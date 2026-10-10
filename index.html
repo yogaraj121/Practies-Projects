@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Projects - Interactive Web Demos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 2.8em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 50px;
+            font-size: 1.15em;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        .project-card h3 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+
+        .project-card a:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        .emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Practice Projects</h1>
+        <p class="subtitle">Interactive Web Demonstrations & Animations</p>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="emoji">🌍</div>
+                <h3>Moon & Earth Animation</h3>
+                <p>Watch the Moon and Earth rotate in this interactive 3D animation. A practice project showcasing CSS animations and rotations.</p>
+                <a href="Rotade%20Mon%20and%20Earth%20Animatios/index.html">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <div class="emoji">✨</div>
+                <h3>Crystal Tree</h3>
+                <p>An interactive crystal tree visualization with beautiful animations. Built with HTML, CSS, and JavaScript for dynamic effects.</p>
+                <a href="crysmers%20tree/cresmars%20tree.html">View Project</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📚 Practice projects for learning web development | <a href="https://github.com/yogaraj121/Practies-Projects" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
